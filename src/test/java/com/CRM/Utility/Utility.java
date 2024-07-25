@@ -17,7 +17,7 @@ public class Utility {
 		File dest=new File(System.getProperty("user.dir")+"//Screenshots//Test"+System.currentTimeMillis()+".png");
 		try {
 			FileHandler.copy(temp, dest);
-			System.out.println("test github commit");
+			System.out.println("test github commit changes to master");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
