@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.CRM.TestCases.BaseClass;
+import com.CRM.Utility.Utility;
 
 public class LoginPage {
 	
@@ -24,7 +25,7 @@ public class LoginPage {
 		 driver.findElement(userEmail).sendKeys(email);
 		 driver.findElement(userPassword).sendKeys(password);
 		 driver.findElement(submitButton).click();
-		 
+		 Utility.getScreenShot(driver);
 		 return driver.getCurrentUrl();
 		 
 	 }
